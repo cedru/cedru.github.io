@@ -14,14 +14,14 @@ export default function Contact() {
                 <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
                 <input type="text" id="subject" className="shadow-sm border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:border-white placeholder:text-white dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you..." required />
               </div>
-          <div className="sm:col-span-2">
-              <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your message</label>
-              <textarea id="message" rows={6} className="shadow-sm border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:border-white placeholder:text-white dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Leave your message here..." required />
+              <div className="sm:col-span-2">
+                  <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your message</label>
+                  <textarea id="message" rows={6} className="shadow-sm border border-gray-300 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:border-white placeholder:text-white dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Leave your message here..." required />
+              </div>
+              <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-white focus:ring-4 focus:outline-none focus:ring-primary-300 bg-ourOrange dark:focus:ring-primary-800">Send message</button>
+            </form>
           </div>
-          <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-primary-700 sm:w-fit hover:bg-white focus:ring-4 focus:outline-none focus:ring-primary-300 bg-ourOrange dark:focus:ring-primary-800">Send message</button>
-      </form>
-  </div>
-</section>
+        </section>
       </main>
     );
   }
