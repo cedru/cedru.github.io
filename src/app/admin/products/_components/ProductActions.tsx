@@ -38,7 +38,6 @@ export function DeleteDropdownItem({ id, disabled}: {
     const router = useRouter()
     return (
         <button
-        
         disabled={disabled || isPending}
         onClick={() => {
         startTransition (async () => {

@@ -23,7 +23,7 @@ export function ProductForm({ product}: { product?: Product | null}) {
                 id="name" 
                 name="name" 
                 placeholder="..." 
-                className="input input-bordered w-full max-w-xs" 
+                className="input input-bordered w-full max-w-xs text-black dark:text-white" 
                 required
                 defaultValue={product?.name || ""} 
                 />
@@ -38,7 +38,7 @@ export function ProductForm({ product}: { product?: Product | null}) {
                        id="priceInCents"
                        name="priceInCents"
                        placeholder="..."
-                       className="input input-bordered w-full max-w-xs"
+                       className="input input-bordered w-full max-w-xs text-black dark:text-white"
                        required
                        value={priceInCents}
                        onChange={e => setPriceInCents(Number(e.target.value) || undefined)} 
@@ -58,7 +58,7 @@ export function ProductForm({ product}: { product?: Product | null}) {
                 id="description" 
                 name="description" 
                 placeholder="..." 
-                className="input input-bordered w-full max-w-xs" 
+                className="input input-bordered w-full max-w-xs text-black dark:text-white" 
                 required
                 defaultValue={product?.description} 
                 />
@@ -95,7 +95,7 @@ export function ProductForm({ product}: { product?: Product | null}) {
                 <div className="label">
                     <label htmlFor="size" className="label-text text-white text-l mt-4">Size</label>
                 </div>
-                <select id="size" name="size" defaultValue={product?.size} className="select select-bordered w-full max-w-xs">
+                <select id="size" name="size" defaultValue={product?.size} className="select select-bordered w-full max-w-xs text-black dark:text-white">
                     <option>S</option>
                     <option>M</option>
                     <option>L</option>

@@ -86,7 +86,7 @@ async function ProductsTable() {
                 <td>
                     <details className="dropdown">
                         <summary className="m-1 btn">...</summary>
-                        <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                        <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52 dark:text-white text-black">
                             <li><a download href={`/admin/products/${product.id}/download`}>Download</a></li>
                             <li><a href={`/admin/products/${product.id}/edit`}>Edit</a></li>
                         
